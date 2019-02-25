@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="240" id="KGk-i7-Jjw" customClass="ChatMyImageCell" customModule="ChatNow" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="462" height="240"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="462" height="239.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultAvatar" translatesAutoresizingMaskIntoConstraints="NO" id="Z01-M8-REz">
+                        <rect key="frame" x="412" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="2XJ-Kb-Kl4"/>
+                            <constraint firstAttribute="width" constant="40" id="9wh-1G-Yol"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_triangle" translatesAutoresizingMaskIntoConstraints="NO" id="XD5-aQ-ivf">
+                        <rect key="frame" x="389" y="20" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="0WX-aP-v9s"/>
+                            <constraint firstAttribute="width" constant="20" id="9QY-sY-cDt"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DgH-TD-pUW">
+                        <rect key="frame" x="176" y="10" width="220" height="220"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="9XQ-BP-fRH">
+                                <rect key="frame" x="10" y="10" width="200" height="200"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="h87-FU-ZKT"/>
+                                    <constraint firstAttribute="width" constant="200" id="oGq-1k-Ufe"/>
+                                </constraints>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Vo8-Ma-ONc">
+                                <rect key="frame" x="100" y="100" width="20" height="20"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.70409660532994922" green="0.63251970521797585" blue="0.17468095913675488" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="9XQ-BP-fRH" firstAttribute="top" secondItem="DgH-TD-pUW" secondAttribute="top" constant="10" id="3sY-YC-uQJ"/>
+                            <constraint firstItem="Vo8-Ma-ONc" firstAttribute="centerY" secondItem="DgH-TD-pUW" secondAttribute="centerY" id="FGp-lk-7XM"/>
+                            <constraint firstItem="Vo8-Ma-ONc" firstAttribute="centerX" secondItem="DgH-TD-pUW" secondAttribute="centerX" id="GXJ-G2-iji"/>
+                            <constraint firstAttribute="bottom" secondItem="9XQ-BP-fRH" secondAttribute="bottom" constant="10" id="Gah-Ug-hGn"/>
+                            <constraint firstAttribute="trailing" secondItem="9XQ-BP-fRH" secondAttribute="trailing" constant="10" id="IWu-5u-5ad"/>
+                            <constraint firstItem="9XQ-BP-fRH" firstAttribute="leading" secondItem="DgH-TD-pUW" secondAttribute="leading" constant="10" id="tam-yy-Uxn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Z01-M8-REz" firstAttribute="leading" secondItem="XD5-aQ-ivf" secondAttribute="trailing" constant="3" id="1sO-nX-c8a"/>
+                    <constraint firstItem="XD5-aQ-ivf" firstAttribute="centerY" secondItem="Z01-M8-REz" secondAttribute="centerY" id="291-Iv-IJr"/>
+                    <constraint firstItem="DgH-TD-pUW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Mxo-g2-ija"/>
+                    <constraint firstItem="XD5-aQ-ivf" firstAttribute="leading" secondItem="DgH-TD-pUW" secondAttribute="trailing" constant="-7" id="Up8-p5-HdY"/>
+                    <constraint firstAttribute="bottom" secondItem="DgH-TD-pUW" secondAttribute="bottom" constant="9.5" id="YdZ-IS-US1"/>
+                    <constraint firstAttribute="trailing" secondItem="Z01-M8-REz" secondAttribute="trailing" constant="10" id="Yop-fC-i0E"/>
+                    <constraint firstItem="Z01-M8-REz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="hIr-NR-fmV"/>
+                    <constraint firstItem="DgH-TD-pUW" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="60" id="wUs-0Q-Pu8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="activityIndicator" destination="Vo8-Ma-ONc" id="9cK-94-Tyd"/>
+                <outlet property="imageMessage" destination="9XQ-BP-fRH" id="zO3-YO-qVV"/>
+                <outlet property="messageView" destination="DgH-TD-pUW" id="PYY-au-7vb"/>
+                <outlet property="profileImage" destination="Z01-M8-REz" id="0nH-rM-bEl"/>
+                <outlet property="triangleView" destination="XD5-aQ-ivf" id="NYH-ZR-CZQ"/>
+            </connections>
+            <point key="canvasLocation" x="100.8" y="112.44377811094454"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="defaultAvatar" width="49" height="49"/>
+        <image name="right_triangle" width="36" height="36"/>
+    </resources>
+</document>
